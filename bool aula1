@@ -1,0 +1,341 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPdB+dmHwJtTEhvmZRWabQG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/edilton54/edilton54/blob/main/bool%20aula1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " def multiplicador (numero):\n",
+        "  global a # todas as referências á variavel a são para a global\n",
+        "  a = 2 # a global será alterado \n",
+        "  print(f\"Dentro da função, variavel vale: {a}\")\n",
+        "  return a*numero\n",
+        "\n",
+        "\n",
+        "\n",
+        "a=3# está variaviel tem escopo global \n",
+        "b=multiplicador(5)\n",
+        "print(f\"a variável de b vale: {b}\")\n",
+        "print(f\"Fora da função, a variável a vale: {a}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KZfxYtbtI7o2",
+        "outputId": "1c222ad1-27d6-45e7-dc63-db5a6d2a87a0"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dentro da função, variavel vale: 2\n",
+            "a variável de b vale: 10\n",
+            "Fora da função, a variável a vale: 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista= [101,202,303,404,505]\n",
+        "print(f'lista[0]={lista[0]}')\n",
+        "print(f'lista[1]={lista[1]}')\n",
+        "print(f'lista[2]={lista[2]}')\n",
+        "print(f'lista[3]={lista[3]}')\n",
+        "print(f'lista[4]={lista[4]}')\n",
+        "print(f'lista completa:{lista}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QSJKahAvMGHl",
+        "outputId": "ac6746e3-052f-410b-e638-f2ef7ff084af"
+      },
+      "execution_count": 48,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "lista[0]=101\n",
+            "lista[1]=202\n",
+            "lista[2]=303\n",
+            "lista[3]=404\n",
+            "lista[4]=505\n",
+            "lista completa:[101, 202, 303, 404, 505]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(1_000_000))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0d3VMAPXebpE",
+        "outputId": "d79c1340-a206-4065-e471-df38ae5b5274"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(50.))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CZcqizvFfV_j",
+        "outputId": "e2b23d5e-c248-42b0-ef19-5fa2839c7b85"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=50.0\n",
+        "y=50.0\n",
+        "print(x)\n",
+        "print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "woEnGUe2ft3z",
+        "outputId": "d462af54-8c56-43d4-b8e1-16cd148fd38c"
+      },
+      "execution_count": 53,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "50.0\n",
+            "50.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(2+3+1))\n",
+        "print(type(2+3+1.0))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zB702Ifggm7T",
+        "outputId": "d81abba6-f613-4356-ca90-1ae14082eeed"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print (2**3)\n",
+        "print(type(2**3))\n",
+        "print(type(2.0**3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bW8M0PJ2g2ar",
+        "outputId": "77ebbe9b-7c93-40bf-f2ff-7fd8754358c3"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "<class 'int'>\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=5/2\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WTxe3Uy_hfz0",
+        "outputId": "495e18ec-8d2d-4804-bc64-51fbbf17d3ee"
+      },
+      "execution_count": 58,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(2<3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CocJ116zi7Dk",
+        "outputId": "4c6a6e1e-b3a4-4236-b3c6-a254cfe282fc"
+      },
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(2>3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IQ2Q2mM-jY0r",
+        "outputId": "b879b86d-6b75-4d66-e186-2e73465560ed"
+      },
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(not(2<3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CNE4YSuXjyra",
+        "outputId": "e95cb9df-21a2-4c6e-b334-6f269d71091e"
+      },
+      "execution_count": 64,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(not(2<3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8sMEGzK3kBdT",
+        "outputId": "327f3346-463f-4d01-a8c9-468ba361d41d"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
