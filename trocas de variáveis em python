@@ -1,0 +1,72 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyObxbsf2g44sFYOYSPWlDQy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/edilton54/edilton54/blob/main/trocas%20de%20vari%C3%A1veis%20em%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Atribuicão\n",
+        "a,b =1,2 \n",
+        "print ('Antes da troca')\n",
+        "print (f'  O valor das variaveis: a={a}')\n",
+        "# primeira troca\n",
+        "temp = a \n",
+        "a=b\n",
+        "b= temp\n",
+        "print ('primeira troca')\n",
+        "print(f\"o valor das variaveis :a={a}, b={b}\")\n",
+        "# segunda troca\n",
+        "a,b=b,a\n",
+        "print('segunda troca')\n",
+        "print (f\"o valor das variaveis: a={a}, b{b}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Uy4COJbv9rzY",
+        "outputId": "ddbef32f-5c03-456b-a27f-9bdc12bffa3d"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Antes da troca\n",
+            "  O valor das variaveis: a=1\n",
+            "primeira troca\n",
+            "o valor das variaveis :a=2, b=1\n",
+            "segunda troca\n",
+            "o valor das variaveis: a=1, b2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
