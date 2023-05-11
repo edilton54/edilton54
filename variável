@@ -1,0 +1,61 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOkr7pCIjkD7P0cANJsSlRe",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/edilton54/edilton54/blob/main/vari%C3%A1vel\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def multiplicador(numero):\n",
+        "        a = 2 # esta variável tem escopo local\n",
+        "        print(f\"Dentro da função, a variável vale: {a}\")\n",
+        "        return a * numero\n",
+        "\n",
+        "a = 3 # esta variável tem escopo global\n",
+        "b = multiplicador(5)\n",
+        "print(f\"Fora da função, a variável a vale: {a}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U_OaMhDSDGcd",
+        "outputId": "49c51eb9-778c-4714-e469-25a2729e390d"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dentro da função, a variável vale: 2\n",
+            "Fora da função, a variável a vale: 3\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
