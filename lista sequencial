@@ -1,0 +1,111 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMjo7rOttG8ehd/bFUl+6Cu",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/edilton54/edilton54/blob/main/lista%20sequencial\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " def multiplicador (numero):\n",
+        "  global a # todas as referências á variavel a são para a global\n",
+        "  a = 2 # a global será alterado \n",
+        "  print(f\"Dentro da função, variavel vale: {a}\")\n",
+        "  return a*numero\n",
+        "\n",
+        "\n",
+        "\n",
+        "a=3# está variaviel tem escopo global \n",
+        "b=multiplicador(5)\n",
+        "print(f\"a variável de b vale: {b}\")\n",
+        "print(f\"Fora da função, a variável a vale: {a}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KZfxYtbtI7o2",
+        "outputId": "1c222ad1-27d6-45e7-dc63-db5a6d2a87a0"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dentro da função, variavel vale: 2\n",
+            "a variável de b vale: 10\n",
+            "Fora da função, a variável a vale: 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista= [101,202,303,404,505]\n",
+        "print(f'lista[0] = {lista[0]}')\n",
+        "print(f'lista[1]= {lista[1]}')\n",
+        "print(f'lista[2]={lista[2]}')\n",
+        "print(f'lista[3]={lista[3]}')\n",
+        "print(f'lista[4]= {lista[4]}')\n",
+        "print(f'lista completa:{lista}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QSJKahAvMGHl",
+        "outputId": "3d1f0670-8f8e-47e4-d29a-ffc1b320f3df"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "lista[0] = 101\n",
+            "lista[1]= 202\n",
+            "lista[2]=303\n",
+            "lista[3]=404\n",
+            "lista[4]= 505\n",
+            "lista completa:[101, 202, 303, 404, 505]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"MS CONCURSOS/2016/Creci 1° Região (RJ)/Analista de TI\")"
+      ],
+      "metadata": {
+        "id": "YaD8IoHVP9hr"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
